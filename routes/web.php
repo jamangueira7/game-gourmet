@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'QuestionController@index')->name('question');
+
+//AJAX
+Route::post('/search/question', 'QuestionController@ajaxSearchQuestion')->name('ajax.search.question');

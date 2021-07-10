@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Http\Models\Question;
 
 class QuestionSeeder extends Seeder
 {
@@ -11,12 +12,12 @@ class QuestionSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Question::class, 1)->create([
+        factory(Question::class, 1)->create([
             'food' => "lasanha",
             'type' => "massa",
             'detail' => "",
         ]);
-        factory(\App\Question::class, 1)->create([
+        factory(Question::class, 1)->create([
             'food' => "bolo de chocolate",
             'type' => "bolo",
             'detail' => "",

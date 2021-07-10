@@ -8,9 +8,19 @@
 }
 
 #game {
-    height: 300px;
-    width: 700px;
+    min-height: 300px !important;
+    width: 700px !important;
     border: 3px solid #212529;
     border-radius: 10px;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+
 }
+
+#question {
+    font-size: 26px;
+}
+
