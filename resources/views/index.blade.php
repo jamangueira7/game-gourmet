@@ -33,7 +33,7 @@
     <div id="content" class="container-fluid">
 
         <div id="game" class="">
-fasdfasd
+
         </div>
     </div>
 
@@ -43,5 +43,8 @@ fasdfasd
     <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
+    <script type="javascript">
+
+    </script>
     </body>
 </html>
