@@ -15,6 +15,8 @@ class QuestionController extends Controller
 
     public function ajaxSearchQuestion(Request $request, QuestionRepository $repository)
     {
-        return $request->all();
+        $resp = $repository->searchQuestion($request->all());
+
+        return $resp;
     }
 }

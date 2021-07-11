@@ -36,7 +36,8 @@
             <div id="game" class="row">
                 <div class="form-group col-12">
                     <input type="hidden" id="question-id" value="0" />
-                    <span id="question" class="font-weight-bold">O prato que você pensou é massa?</span>
+                    <input type="hidden" id="type" value="" />
+                    <span id="question" class="font-weight-bold">O prato que você pensou é <span id="val-alt">massa</span>?</span>
                     @csrf
                 </div>
 
@@ -80,9 +81,21 @@
                     $.ajax({
                         type:'POST',
                         url: url,
-                        data:{ question:  $("#question").val(), questionID: $("#question-id").val(), choise: yesOrNot},
+                        data:{
+                            question:  $("#val-alt").text(),
+                            type: $("#type").val(),
+                            questionID: $("#question-id").val(),
+                            choise: yesOrNot
+                        },
                         success:function(data){
                             console.log(data);
+                            if(data === 'response') {
+                                console.log("aqui");
+                            } else {
+                                $("#val-alt").text(data['food']);
+                                $("#question-id").val(data['id']);
+                            }
+
                         },
                         error:function(data){
                             console.log('Erro no Ajax!');

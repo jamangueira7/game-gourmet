@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Question extends Model
 {
-    protected $fillable = ['food', 'type', 'detail'];
+    protected $fillable = ['food', 'type', 'detail', 'standard'];
 }
