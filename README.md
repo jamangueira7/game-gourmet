@@ -26,11 +26,47 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto é um jogo onde a inteligência da máquina tenta adivinhar o prato que você está pensando.
 
+- Página inicial.
+
 <p align="center">
   Login
-  <img alt="Login" src=".github/imagem1.PNG" width="700px" height="350px">
+  <img alt="Login" src=".github/start.PNG" width="850px">
 </p>
 
+- Primeira pergunta.
+
+<p align="center">
+  Login
+  <img alt="Login" src=".github/first_question.PNG" width="850px">
+</p>
+
+- PC ganhou.
+
+<p align="center">
+  Login
+  <img alt="Login" src=".github/winner_pc.PNG" width="850px">
+</p>
+
+- Usuário ganhou.
+
+<p align="center">
+  Login
+  <img alt="Login" src=".github/winner_user.PNG" width="850px">
+</p>
+
+- Escrevendo característica.
+
+<p align="center">
+  Login
+  <img alt="Login" src=".github/write_feature.PNG" width="850px">
+</p>
+
+- 404.
+
+<p align="center">
+  Login
+  <img alt="Login" src=".github/404.PNG" width="850px">
+</p>
 
 ## 🚀 Como Rodar
 
@@ -41,9 +77,10 @@ O projeto é um jogo onde a inteligência da máquina tenta adivinhar o prato qu
 docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 ```
 - Criar um banco com o nome game_gourmet.
+- Executer o comando "php artisan migrate:fresh".
+- Executer o comando "php artisan db:seed".
 - Execute o comando "composer server".
 - Acesse http://localhost:8000/
-
 
 ## Licença
 
