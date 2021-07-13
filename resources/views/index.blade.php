@@ -179,6 +179,8 @@
                     pc = 0;
                     user = 0;
                     final = false;
+                    $("#pc-points").text(pc);
+                    $("#user-points").text(user);
                 }
                 function restart() {
                     $("#presentation").css("display", "block");
