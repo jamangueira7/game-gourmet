@@ -28,32 +28,32 @@ O projeto é um jogo onde a inteligência da máquina tenta adivinhar o prato qu
 
 - Página inicial.
 <p align="center">
-  <img alt="Login" src=".github/start.PNG" width="850px">
+  <img alt="Página inicial" src=".github/start.PNG" width="850px">
 </p>
 
 - Primeira pergunta.
 <p align="center">
-  <img alt="Login" src=".github/first_question.PNG" width="850px">
-</p>
-
-- PC ganhou.
-<p align="center">
-  <img alt="Login" src=".github/winner_pc.PNG" width="850px">
+  <img alt="Primeira pergunta" src=".github/first_question.PNG" width="850px">
 </p>
 
 - Usuário ganhou.
 <p align="center">
-  <img alt="Login" src=".github/winner_user.PNG" width="850px">
+  <img alt="Usuário ganhou" src=".github/winner_pc.PNG" width="850px">
+</p>
+
+- Usuário ganhou.
+<p align="center">
+  <img alt="Usuário ganhou" src=".github/winner_user.PNG" width="850px">
 </p>
 
 - Escrevendo característica.
 <p align="center">
-  <img alt="Login" src=".github/write_feature.PNG" width="850px">
+  <img alt="Escrevendo característica" src=".github/write_feature.PNG" width="850px">
 </p>
 
-- 404.
+- '404'.
 <p align="center">
-  <img alt="Login" src=".github/404.PNG" width="850px">
+  <img alt="404" src=".github/404.PNG" width="850px">
 </p>
 
 ## 🚀 Como Rodar
