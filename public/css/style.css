@@ -1,22 +1,31 @@
 #content {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100% !important;
     overflow-y: hidden;
     padding-top: 150px;
+
 }
 
 .game {
-    min-height: 300px !important;
-    width: 700px !important;
+    min-height: 200px !important;
+    width: 750px !important;
     border: 3px solid #212529;
     border-radius: 10px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+
+}
+
+.result {
+    min-height: 100px !important;
+    width: 750px !important;
+    border: 3px solid #212529;
+    border-radius: 10px;
+    margin-top: 25px;
 
 }
 

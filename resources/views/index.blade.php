@@ -100,7 +100,19 @@
                     <button type="button" class="btn btn-lg btn-success col-5" id="again-bnt">Jogar novamente</button>
                 </div>
             </div>
+
+            <div class="row result" style="display: block;">
+                <div class="form-group col-12">
+                    <span class="font-weight-bold">PC - <span id="pc-points"> 0</span></span>
+                </div>
+
+                <div class="form-group col-12">
+                    <span class="font-weight-bold">Usuário - <span id="user-points"> 0</span></span>
+                </div>
+            </div>
         </div>
+
+
 
         <script src="{{ asset('js/jquery-3-3-1.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -110,6 +122,8 @@
         <script type="text/javascript">
 
             let id = "";
+            let pc = 0;
+            let user = 0;
             let yes = [];
             let not = [];
             let final = false;
@@ -143,10 +157,29 @@
                 });
 
                 $("#restart").click("click", function(){
-                    restart();
+                    inital();
                 });
 
 
+                function inital () {
+                    $("#presentation").css("display", "block");
+                    $("#game").css("display", "none");
+                    $("#input-group").css("display", "none");
+                    $("#compare-group").css("display", "none");
+                    $("#winner-group").css("display", "none");
+
+                    $("#val-alt").text("massa");
+
+                    $("#new-food").val("");
+                    $("#detail").val("");
+
+                    yes = [];
+                    not = [];
+                    id = "";
+                    pc = 0;
+                    user = 0;
+                    final = false;
+                }
                 function restart() {
                     $("#presentation").css("display", "block");
                     $("#game").css("display", "none");
@@ -233,6 +266,9 @@
 
                     if(yesOrNot == 'yes') {
                         if(final) {
+                            pc = pc + 1;
+                            $("#pc-points").text(pc);
+
                             $("#game").css("display", "none");
                             $("#input-group").css("display", "none");
                             $("#compare-group").css("display", "none");
@@ -248,6 +284,8 @@
 
                     } else {
                         if(final) {
+                            user +=1;
+                            $("#user-points").text(user);
                             not.push($("#val-alt").text());
                             $("#game").css("display", "none");
                             $("#input-group").css("display", "block");

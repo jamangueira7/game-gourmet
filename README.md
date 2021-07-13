@@ -67,6 +67,16 @@ docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 - Criar um banco com o nome game_gourmet.
 - Executer o comando "php artisan migrate:fresh".
 - Executer o comando "php artisan db:seed".
+- Preencha o arquivo .env com os dados do seu banco:
+```
+  DB_CONNECTION=pgsql
+  DB_HOST=127.0.0.1
+  DB_PORT=5432
+  DB_DATABASE=game_gourmet
+  DB_USERNAME=postgres
+  DB_PASSWORD=docker
+```
+  
 - Execute o comando "composer server".
 - Acesse http://localhost:8000/
 
