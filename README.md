@@ -27,44 +27,32 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O projeto é um jogo onde a inteligência da máquina tenta adivinhar o prato que você está pensando.
 
 - Página inicial.
-
 <p align="center">
-  Login
   <img alt="Login" src=".github/start.PNG" width="850px">
 </p>
 
 - Primeira pergunta.
-
 <p align="center">
-  Login
   <img alt="Login" src=".github/first_question.PNG" width="850px">
 </p>
 
 - PC ganhou.
-
 <p align="center">
-  Login
   <img alt="Login" src=".github/winner_pc.PNG" width="850px">
 </p>
 
 - Usuário ganhou.
-
 <p align="center">
-  Login
   <img alt="Login" src=".github/winner_user.PNG" width="850px">
 </p>
 
 - Escrevendo característica.
-
 <p align="center">
-  Login
   <img alt="Login" src=".github/write_feature.PNG" width="850px">
 </p>
 
 - 404.
-
 <p align="center">
-  Login
   <img alt="Login" src=".github/404.PNG" width="850px">
 </p>
 
