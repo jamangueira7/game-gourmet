@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'QuestionController@index')->name('question');
+Route::get('/', 'FoodController@index')->name('food');
 
 //AJAX
-Route::post('/search/question', 'QuestionController@ajaxSearchQuestion')->name('ajax.search.question');
+Route::post('/search/food', 'FoodController@ajaxSearchFood')->name('ajax.search.food');
+Route::post('/save/food', 'FoodController@saveFood')->name('ajax.save.food');
+Route::post('/update/food', 'FoodController@updateFood')->name('ajax.update.food');

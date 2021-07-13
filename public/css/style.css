@@ -7,7 +7,7 @@
     padding-top: 150px;
 }
 
-#game {
+.game {
     min-height: 300px !important;
     width: 700px !important;
     border: 3px solid #212529;
@@ -24,3 +24,11 @@
     font-size: 26px;
 }
 
+.middle {
+    font-size: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
